@@ -622,3 +622,36 @@ em {
     scroll-behavior: auto;
   }
 }
+/* Кнопка WhatsApp в контактах */
+.wa-wrapper {
+  width: min(100%, var(--max));
+  margin: 0 auto 2.2rem;
+  padding: 0 var(--pad);
+}
+
+.wa-button-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0.8rem 1.8rem;
+  border: 1.5px solid var(--gold);
+  background: transparent;
+  color: var(--gold);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border-radius: 50px; /* Закругленные углы */
+}
+
+.wa-button-gold:hover {
+  background: var(--gold);
+  color: #12100a;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(230, 195, 92, 0.3);
+}
+
+.wa-button-gold svg {
+  fill: currentColor;
+  display: block;
+}
