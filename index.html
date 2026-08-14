@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gold Chicken — Кизляр</title>
+  <meta name="description" content="Gold Chicken — кафе в Кизляре. Шаурма, бургеры, датский хот-дог, куриный багет и кофе." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="logo" href="#top" aria-label="Gold Chicken">
+      <img src="assets/logo.svg" alt="" width="36" height="36" />
+      <span>Gold Chicken</span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#menu">Меню</a>
+      <a href="#hits">Хиты</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="header-cta" href="#contacts">Как добраться</a>
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/entrance.png" alt="" />
+        <div class="hero-shade"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-place">Кизляр</p>
+        <h1 class="brand-title">
+          <span>Gold</span>
+          <img class="brand-mark" src="assets/logo.svg" alt="" width="72" height="72" />
+          <span>Chicken</span>
+        </h1>
+        <p class="hero-lead">Шаурма, бургеры и датский хот-дог — с золотым характером.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#menu">Смотреть меню</a>
+          <a class="btn btn-ghost" href="#hits">Наши хиты</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hits" id="hits">
+      <div class="section-head">
+        <h2>Хиты витрины</h2>
+        <p>То, что видно с улицы — и то, за чем приходят снова.</p>
+      </div>
+      <div class="hits-row">
+        <article class="hit">
+          <span class="hit-tag">Классика</span>
+          <h3>Датский хот-дог</h3>
+          <p>190&nbsp;₽</p>
+        </article>
+        <article class="hit">
+          <span class="hit-tag">Курица</span>
+          <h3>Куриный багет</h3>
+          <p>340&nbsp;₽</p>
+        </article>
+        <article class="hit">
+          <span class="hit-tag">Топ</span>
+          <h3>Дубайский бургер</h3>
+          <p>510&nbsp;₽</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="section-head">
+        <h2>Меню</h2>
+        <p>Цены на момент публикации. Двойные цены — разные размеры порций.</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist" aria-label="Категории меню">
+        <button class="tab is-active" role="tab" aria-selected="true" data-tab="shawarma">Шаурма</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="burgers">Бургеры и не шаурма</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="drinks">Напитки</button>
+      </div>
+
+      <div class="menu-panels">
+        <div class="menu-panel is-active" id="panel-shawarma" role="tabpanel">
+          <div class="menu-grid">
+            <div class="menu-block">
+              <h3>Шаурма</h3>
+              <ul class="menu-list">
+                <li><span>Шаурма большая</span><span>240&nbsp;₽</span></li>
+                <li><span>Шаурма средняя</span><span>200&nbsp;₽</span></li>
+                <li><span>Шаурма маленькая</span><span>170&nbsp;₽</span></li>
+                <li><span>Шаурма сырная</span><span>250&nbsp;₽</span></li>
+                <li><span>Шаурма в булочке</span><span>180&nbsp;₽</span></li>
+                <li><span>Шаурма в тандыре</span><span>180&nbsp;₽</span></li>
+                <li><span>Шаурма мексиканская <em>(с халапеньо)</em></span><span>230&nbsp;₽</span></li>
+              </ul>
+            </div>
+            <div class="menu-block">
+              <h3>Шаурма в кляре</h3>
+              <ul class="menu-list">
+                <li><span>Большая</span><span>310&nbsp;₽</span></li>
+                <li><span>Маленькая</span><span>280&nbsp;₽</span></li>
+              </ul>
+              <h3 class="sub">Соусы</h3>
+              <ul class="menu-list">
+                <li><span>Сырно-острый</span><span>50&nbsp;₽</span></li>
+                <li><span>Красный-бешамель</span><span>50&nbsp;₽</span></li>
+                <li><span>Сырный</span><span>35&nbsp;₽</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-burgers" role="tabpanel" hidden>
+          <div class="menu-grid">
+            <div class="menu-block">
+              <h3>Бургеры</h3>
+              <ul class="menu-list">
+                <li><span>Бургер</span><span>320&nbsp;₽</span></li>
+                <li><span>Дубайский бургер</span><span>510&nbsp;₽</span></li>
+                <li><span>Турецкий бургер</span><span>350&nbsp;₽</span></li>
+                <li><span>Голландский бургер</span><span>360&nbsp;₽</span></li>
+              </ul>
+              <h3 class="sub">Снеки</h3>
+              <ul class="menu-list">
+                <li><span>Картофель фри</span><span>135 / 165&nbsp;₽</span></li>
+                <li><span>Наггетсы</span><span>145 / 185&nbsp;₽</span></li>
+              </ul>
+            </div>
+            <div class="menu-block">
+              <h3>Не шаурма</h3>
+              <ul class="menu-list">
+                <li><span>Чикен бокс</span><span>610&nbsp;₽</span></li>
+                <li><span>Острые крылышки <em>(в сырно-остром соусе)</em></span><span>370&nbsp;₽</span></li>
+                <li><span>Буррито</span><span>250&nbsp;₽</span></li>
+                <li><span>Твистер большой</span><span>240&nbsp;₽</span></li>
+                <li><span>Твистер маленький</span><span>210&nbsp;₽</span></li>
+                <li><span>Хот-дог датский <em>(классика)</em></span><span>190&nbsp;₽</span></li>
+                <li><span>Хот-дог Мексика <em>(острый)</em></span><span>190&nbsp;₽</span></li>
+                <li><span>Багет куриный</span><span>340&nbsp;₽</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-panel" id="panel-drinks" role="tabpanel" hidden>
+          <div class="menu-grid menu-grid-3">
+            <div class="menu-block">
+              <h3>Кофе с молоком</h3>
+              <ul class="menu-list">
+                <li><span>Капучино</span><span>150 / 200&nbsp;₽</span></li>
+                <li><span>Латте</span><span>150 / 200&nbsp;₽</span></li>
+                <li><span>Флэт уайт</span><span>160&nbsp;₽</span></li>
+                <li><span>Какао</span><span>100 / 150&nbsp;₽</span></li>
+              </ul>
+              <h3 class="sub">Кофе</h3>
+              <ul class="menu-list">
+                <li><span>Эспрессо</span><span>140&nbsp;₽</span></li>
+                <li><span>Американо</span><span>140&nbsp;₽</span></li>
+                <li><span>Лунго</span><span>150&nbsp;₽</span></li>
+              </ul>
+            </div>
+            <div class="menu-block">
+              <h3>Раф</h3>
+              <ul class="menu-list">
+                <li><span>Раф классический</span><span>160 / 210&nbsp;₽</span></li>
+                <li><span>Раф арахис</span><span>200 / 250&nbsp;₽</span></li>
+                <li><span>Раф солёная карамель</span><span>200 / 250&nbsp;₽</span></li>
+                <li><span>Раф цитрусовый</span><span>200 / 250&nbsp;₽</span></li>
+                <li><span>Раф урбеч <em>(миндаль / арахис)</em></span><span>200 / 250&nbsp;₽</span></li>
+              </ul>
+            </div>
+            <div class="menu-block">
+              <h3>Коктейли</h3>
+              <ul class="menu-list">
+                <li><span>Банановый</span><span>220&nbsp;₽</span></li>
+                <li><span>Молочный</span><span>200&nbsp;₽</span></li>
+                <li><span>Клубничный</span><span>220&nbsp;₽</span></li>
+                <li><span>Шоколадный</span><span>200&nbsp;₽</span></li>
+              </ul>
+              <h3 class="sub">Фреши</h3>
+              <ul class="menu-list">
+                <li><span>Апельсин</span><span>300&nbsp;₽</span></li>
+                <li><span>Грейпфрут</span><span>300&nbsp;₽</span></li>
+              </ul>
+              <h3 class="sub">Добавки</h3>
+              <ul class="menu-list">
+                <li><span>Сироп</span><span>20&nbsp;₽</span></li>
+                <li><span>Альтернативное молоко</span><span>40&nbsp;₽</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about-copy">
+        <h2>Чёрный фасад.<br />Золотой вкус.</h2>
+        <p>Gold Chicken — кафе в Кизляре с уличной витриной и своим характером: шаурма, бургеры, датский хот-дог и кофе, чтобы зайти быстро и сытно.</p>
+      </div>
+      <figure class="about-photo">
+        <img src="assets/entrance.png" alt="Главный вход Gold Chicken в Кизляре" />
+      </figure>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="section-head">
+        <h2>Контакты</h2>
+        <p>Ждём вас в Кизляре.</p>
+      </div>
+      <div class="contacts-row">
+        <div class="contact-item">
+          <span class="label">Город</span>
+          <strong>Кизляр</strong>
+        </div>
+        <div class="contact-item">
+          <span class="label">Карта</span>
+          <a href="https://2gis.ru/kizlyar/search/Gold%20Chicken" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+        </div>
+        <div class="contact-item">
+          <span class="label">Навигация</span>
+          <a href="#menu">К меню</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="assets/logo.svg" alt="" width="28" height="28" />
+      <span>Gold Chicken</span>
+    </div>
+    <p>Кизляр · кафе</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
